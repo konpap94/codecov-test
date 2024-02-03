@@ -1,0 +1,16 @@
+codecov:
+  require_ci_to_pass: yes
+
+coverage:
+  status:
+    project: 
+      default:
+        # Overall project coverage settings
+        target: 70%
+        threshold: 1%
+
+    patch:
+      default:
+        # Specific settings for new code in PRs
+        target: 70%  # Require 70% coverage on new code
+        threshold: 0%  # No decrease in coverage is allowed
